@@ -36,7 +36,7 @@ export default function EmployeeLoginPage() {
   // Redirect if already logged in
   useEffect(() => {
     if (user) {
-      navigate('/dashboard', { replace: true });
+      navigate('/employee/dashboard', { replace: true });
     }
   }, [user, navigate]);
 
@@ -172,7 +172,7 @@ export default function EmployeeLoginPage() {
       setAuthenticatedUser(employee);
 
       setTimeout(() => {
-        navigate('/dashboard', { replace: true });
+        navigate('/employee/dashboard', { replace: true });
       }, 700);
     } catch (err: unknown) {
       console.error('Error handling employee auth success:', err);

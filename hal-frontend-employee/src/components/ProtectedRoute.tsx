@@ -20,7 +20,7 @@ export default function ProtectedRoute() {
   }
 
   if (!user) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/employee/login" replace />;
   }
 
   return <Outlet />;
