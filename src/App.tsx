@@ -7,7 +7,7 @@ import ProtectedRoute from '@/components/ProtectedRoute';
 export default function App() {
   return (
     <AuthProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/employee-portal">
         <Routes>
           {/* Public Employee Login Route */}
           <Route path="/employee/login" element={<EmployeeLoginPage />} />
